@@ -21,4 +21,9 @@ public class TomatoSauce extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " Tomato Sauce,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.00;
+    }
 }

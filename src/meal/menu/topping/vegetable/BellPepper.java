@@ -33,4 +33,9 @@ public class BellPepper extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " " + vegetableColour + " Bell Pepper,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.00;
+    }
 }

@@ -22,4 +22,9 @@ public class Ham extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " Ham,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.50;
+    }
 }

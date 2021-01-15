@@ -22,4 +22,9 @@ public class Guaccamole extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " Guaccamole,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.50;
+    }
 }

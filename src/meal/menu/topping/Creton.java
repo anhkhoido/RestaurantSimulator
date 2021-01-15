@@ -21,4 +21,9 @@ public class Creton extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " Creton,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.50;
+    }
 }
