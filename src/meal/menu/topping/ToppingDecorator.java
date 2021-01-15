@@ -4,4 +4,5 @@ import meal.Meal;
 
 public abstract class ToppingDecorator extends Meal {
     public abstract String getDescription();
+    public abstract double getPrice();
 }

@@ -33,4 +33,9 @@ public class HotPepper extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " " + vegetableColour + " Hot Pepper,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.50;
+    }
 }

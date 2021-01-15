@@ -21,7 +21,7 @@ public class Main {
         pizza = new Carrot(pizza, new OrangeVegetable());
         pizza = new Onion(pizza, new WhiteVegetable());
         pizza = new HotPepper(pizza, new GreenVegetable());
-        System.out.println("You ordered a " + pizza.getDescription() + "\n");
+        System.out.println("You ordered a " + pizza.getDescription() + ". The pizza costs $" + pizza.getPrice() + "\n");
 
         Meal vietnameseBaguette = new VietnameseBaguette();
         vietnameseBaguette = new Creton(vietnameseBaguette);
@@ -29,7 +29,7 @@ public class Main {
         vietnameseBaguette = new Carrot(vietnameseBaguette, new OrangeVegetable());
         vietnameseBaguette = new Ham(vietnameseBaguette);
         vietnameseBaguette = new HotPepper(vietnameseBaguette, new GreenVegetable());
-        System.out.println("You ordered a " + vietnameseBaguette.getDescription() + ".");
+        System.out.println("You ordered a " + vietnameseBaguette.getDescription() + ". It costs $" + vietnameseBaguette.getPrice());
     }
 
 }

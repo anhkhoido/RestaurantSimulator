@@ -21,4 +21,9 @@ public class Pepperoni extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " Pepperoni,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.50;
+    }
 }

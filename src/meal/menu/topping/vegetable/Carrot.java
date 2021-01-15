@@ -33,4 +33,9 @@ public class Carrot extends ToppingDecorator {
     public String getDescription() {
         return meal.getDescription() + " " + vegetableColour + " Carrot,";
     }
+
+    @Override
+    public double getPrice() {
+        return meal.getPrice() + 0.00;
+    }
 }
